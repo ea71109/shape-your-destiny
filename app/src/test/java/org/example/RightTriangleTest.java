@@ -76,5 +76,13 @@ public class RightTriangleTest {
         assertEquals((83.2 + 53.3) + Math.sqrt((83.2 * 83.2) + (53.3 * 53.3)), rightTriangle.getPerimeter());
     }
 
+    @Test
+    public void rightNumberOFSidesForRightTriangle()
+    {
+        double length = 1.0;
+        double width = 1.0;
+        RightTriangle rightTriangle = new RightTriangle(length, width);
+        assertEquals(3, rightTriangle.numberOfSides());
+    }
 
 }

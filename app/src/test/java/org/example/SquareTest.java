@@ -68,4 +68,12 @@ public class SquareTest
         Square square = new Square(sidelength);
         assertEquals(182, square.getPerimeter());
     }
+
+    @Test
+    public void rightNumberOfSidesForSquare()
+    {
+        double sidelength = 1.0;
+        Square square = new Square(sidelength);
+        assertEquals(4, square.numberOfSides());
+    }
 }

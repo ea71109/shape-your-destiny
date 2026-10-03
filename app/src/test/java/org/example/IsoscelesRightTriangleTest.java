@@ -62,4 +62,12 @@ public class IsoscelesRightTriangleTest {
         IsoscelesRightTriangle isoscelesRightTriangle = new IsoscelesRightTriangle(legLength);
         assertEquals(67 + Math.sqrt((33.5 * 33.5) + (33.5*33.5)), isoscelesRightTriangle.getPerimeter());
     }
+
+    @Test
+    public void rightNumberOfSidesForIsoscelesRightTriangle()
+    {
+        double legLength = 1.0;
+        IsoscelesRightTriangle isoscelesRightTriangle = new IsoscelesRightTriangle(legLength);
+        assertEquals(3, isoscelesRightTriangle.numberOfSides());
+    }
 }

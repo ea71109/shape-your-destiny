@@ -75,6 +75,13 @@ public class RectangleTest {
         assertEquals(2*(45.3 + 83.2), rectangle.getPerimeter());
     }
 
-
+    @Test
+    public void rightumberOfSidesForRectangle()
+    {
+        double length = 1.0;
+        double width = 1.0;
+        Rectangle rectangle = new Rectangle(length, width);
+        assertEquals(4, rectangle.numberOfSides());
+    }
 
 }
